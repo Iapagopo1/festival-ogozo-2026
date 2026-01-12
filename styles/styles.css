@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background: linear-gradient(#000000D9, #000000D9), url(../assets/img/Gozo25-fondo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+
+body,
+input,
+button {
+    font-family: Poppins-Regular;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    padding: 30px 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    padding: 0px 150px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    padding: 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 130px;
+    height: 45px;
+}
+
+.button__header {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.campana {
+    width: 22px;
+    height: 24px;
+}
+
+.h1__main {
+    color: #ffffff;
+    font-family: Poppins-Bold;
+    font-size: 85px;
+    background: url(../assets/img/circleElement.svg);
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+}
+
+.p__main {
+    margin-bottom: 20px;
+    color: #adadad;
+}
+
+.button__main {
+    margin-bottom: 20px;
+    width: 350px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #0caea5;
+    border: 2px solid #0caea5;
+}
+
+.button__main:hover {
+    background-color: #0a958e;
+    border: 2px solid #0a958e;
+}
+
+.button__main:active {
+    background-color: #0caea5;
+    border: 2px solid #0caea5;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.countdown__box {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown__h3 {
+    font-family: Poppins-Bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.countdown__p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.poster {
+    width: 450px;
+    height: 600px;
+}
+
+.p__footer {
+    color: #676c6c;
+}
+
+.form__main {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+}
+
+.modal-contenido {
+    padding: 57px;
+    width: 755px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(#000000D9, #000000D9), url(../assets/img/Gozo25-fondo.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    left: 95%;
+    top: 0%;
+    font-size: 20px;
+}
+
+.input__form {
+    width: 417px;
+    height: 78px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff1a;
+}
+
+.button__form {
+    width: 226px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #ffffff;
+    background: #0caea5;
+    border: 2px solid #0caea5;
+}
+
+.button__form:hover {
+    background-color: #0a958e;
+    border: 2px solid #0a958e;
+}
+
+.button__form:active {
+    background-color: #0caea5;
+    border: 2px solid #0caea5;
+}
+
+.politicas {
+    color: #0caea5;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Ejercicio 80</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/img/oGozo-logo.png" alt="Logo Gozo">
+        <button id="button__header" onclick="abrirModal()" class="button__header">
+            <img class="campana" src="./assets/icon/campana_icon.svg" alt="campana">
+            Avisame
+        </button>
+    </header>
+    <main>
+        <div>
+            <h1 class="h1__main">Próximamente</h1>
+            <p class="p__main">CICLO DE CONCERTOS INTERNACIONAIS EN GALICIA</p>
+            <button class="button__main">MERCAR ENTRADAS</button>
+            <div class="countdown">
+                <div class="countdown__box">
+                    <h3 id="dias" class="countdown__h3">14</h3>
+                    <p class="countdown__p">Días</p>
+                </div>
+                <div class="separator">
+                    <img src="./assets/img/separator.svg" alt="Separador">
+                </div>
+                <div class="countdown__box">
+                    <h3 id="horas" class="countdown__h3">14</h3>
+                    <p class="countdown__p">Horas</p>
+                </div>
+                <div class="separator">
+                    <img src="./assets/img/separator.svg" alt="Separador">
+                </div>
+                <div class="countdown__box">
+                    <h3 id="minutos" class="countdown__h3">14</h3>
+                    <p class="countdown__p">Minutos</p>
+                </div>
+                <div class="separator">
+                    <img src="./assets/img/separator.svg" alt="Separador">
+                </div>
+                <div class="countdown__box">
+                    <h3 id="segundos" class="countdown__h3">14</h3>
+                    <p class="countdown__p">Segundos</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="poster" src="./assets/img/poster_ogozo2026.png" alt="Poster Gozo">
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <form class="form__main" onsubmit="enviarFormulario(event)">
+                    <input class="input__form" type="text" required>
+                    <button class="button__form" type="submit">
+                        <img class="campana" src="./assets/icon/campana_icon.svg" alt="campana">
+                        Avisame
+                    </button>
+                </form>
+                <p>Ao suscribirte, aceptas as nosas <a class="politicas" href="#">políticas de privacidade</a>.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="p__footer">&copy; Copyright 2023, LIVE NATION ESPAÑA, S.A.U.</p>
+        <div>
+            <nav>
+                <a href="#"><img src="./assets/icon/yt_icon.svg" alt="logo youtube"></a>
+                <a href="#"><img src="./assets/icon/fb_icon.svg" alt="logo facebook"></a>
+                <a href="#"><img src="./assets/icon/ig_icon.svg" alt="logo instagran"></a>
+            </nav>
+        </div>
+    </footer>
+    <script src="./JS/scrip.js"></script>
+</body>
+</html>
