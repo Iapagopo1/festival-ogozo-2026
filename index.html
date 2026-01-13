@@ -67,11 +67,11 @@
         <div>
             <img class="poster" src="./assets/img/poster_ogozo2026.png" alt="Poster Gozo">
         </div>
-        <div id="modal" class="modal">
-            <div class="modal-contenido">
-                <span class="cerrar" onclick="cerrarModal()">&times;</span>
-                <form class="form__main" onsubmit="enviarFormulario(event)">
-                    <input class="input__form" type="text" required>
+        <div id="modal__main" class="modal__main">
+            <div class="modal__contenido">
+                <span class="modal__cerrar" onclick="cerrarModal()">&times;</span>
+                <form class="form__main" onsubmit="enviarFormulario()" action="contact.php" method="post"> 
+                    <input class="input__form" type="text" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                     <button class="button__form" type="submit">
                         <img class="campana" src="./assets/icon/campana_icon.svg" alt="campana">
                         Avisame
